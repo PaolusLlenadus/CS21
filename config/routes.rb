@@ -17,7 +17,7 @@ Todolist::Application.routes.draw do
     end
   end
 
-  root "navigation#home"
+  root "tasks#index"
   get 'help' => "navigation#help"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

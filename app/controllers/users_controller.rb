@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 	    @user = User.new(user_params)
 	    if @user.save
 	      session[:user_id] = @user.id
-	      redirect_to tasks_url, notice: "Thank you for signing up!"
+	      redirect_to tasks_url, notice: "Sign up successful"
 	    else
 	      render "new"
 	    end

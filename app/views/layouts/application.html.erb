@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Todo List" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Tasklist Manager" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -18,7 +18,7 @@
         <li class="name">
           <h1>
             <a href="/">
-              Todo List
+              Tasklist Manager
             </a>
           </h1>
         </li>
@@ -62,10 +62,7 @@
       </div>
     </div>
   </section>
-  <footer id="footer">
-    <hr>
-                      <p>&copy; Kenley Earl Tan & Jamiessonn Carlo Lao 2013</p>
-  </footer>
+  
     <%= javascript_include_tag "application" %>
   </body>
 </html>

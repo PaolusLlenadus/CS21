@@ -39,13 +39,13 @@
           <%= submit_tag "Mark as Incomplete", class: "button small success radius" %>        
         <% end %>
       <% else %>
-        Bad news: We found nothing. Good news: You don't have to do anything.
+        No tasks at hand.
       <% end %>
       
     <% end %>
   </div>
   <div class="large-4 columns">
-    <h3>Create a New Task</h3>
+    <h3>New Task</h3>
     <%= form_for(Task.new) do |f| %>     
 
       <div class="row">
